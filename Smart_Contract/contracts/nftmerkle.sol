@@ -13,7 +13,9 @@ contract MftMerkle is ERC721, ERC721Burnable, Ownable {
         return "baseuri.com";
     }
 
-
+    function isWhitelisted() public view returns(bool){
+        
+    }
 
     function safeMint(address to, uint256 tokenId) public onlyOwner {
         _safeMint(to, tokenId);
